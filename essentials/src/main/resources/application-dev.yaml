@@ -1,0 +1,14 @@
+server:
+  port: 7121
+
+spring:
+  jpa:
+    database: postgresql
+  sql:
+    init:
+      platform: postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dev
+    username: postgres
+    password: postgres
+
