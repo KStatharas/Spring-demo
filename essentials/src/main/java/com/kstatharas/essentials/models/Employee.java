@@ -1,11 +1,13 @@
 package com.kstatharas.essentials.models;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.util.UUID;
 
 @Data
+@AllArgsConstructor
 @Entity
 @Table(name="Employee")
 public class Employee {
@@ -25,10 +27,4 @@ public class Employee {
         this.employeeId = UUID.randomUUID().toString();
     }
 
-    public Employee(String id, String firstname, String lastname, Position position) {
-        this.employeeId = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.position = position;
-    }
 }
